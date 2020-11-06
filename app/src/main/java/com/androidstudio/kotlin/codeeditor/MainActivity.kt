@@ -48,7 +48,20 @@ class MainActivity : AppCompatActivity() {
             }
 
             R.id.add_html_code ->{
-
+                user_code.setText(
+                        "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "<head>\n" +
+                        "<title>Page Title</title>\n" +
+                        "</head>\n" +
+                        "<body>\n" +
+                        "\n" +
+                        "<h1>This is a Heading</h1>\n" +
+                        "<p>This is a paragraph.</p>\n" +
+                        "\n" +
+                        "</body>\n" +
+                        "</html>")
+                return true
             }
 
             R.id.clear ->{
