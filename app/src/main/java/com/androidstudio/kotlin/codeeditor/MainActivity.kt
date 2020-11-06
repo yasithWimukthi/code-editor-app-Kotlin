@@ -39,6 +39,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item?.itemId){
+
+            R.id.run_menu ->{
+                Run()
+                return true
+            }
+
+            R.id.add_html_code ->{
+
+            }
+
+            R.id.clear ->{
+                user_code.setText("")
+                return true
+            }
+
+            R.id.close ->{
+                finish()
+                return true
+            }
+        }
         return super.onOptionsItemSelected(item)
     }
 }
