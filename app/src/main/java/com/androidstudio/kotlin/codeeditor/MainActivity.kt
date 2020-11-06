@@ -3,8 +3,11 @@ package com.androidstudio.kotlin.codeeditor
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.AutoCompleteTextView
 import android.widget.Button
+import java.util.zip.Inflater
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,5 +30,15 @@ class MainActivity : AppCompatActivity() {
         var intent = Intent(this@MainActivity,code_activity::class.java)
         intent.putExtra("code",user_code.text.toString())
         startActivity(intent)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.main_menu,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return super.onOptionsItemSelected(item)
     }
 }
