@@ -1,3 +1,4 @@
+
 package com.androidstudio.kotlin.codeeditor
 
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +33,9 @@ class code_activity : AppCompatActivity() {
             R.id.en_js ->{
                 web_browser.settings.javaScriptEnabled
                 return true
+                /**
+                 * enable javascript
+                 */
             }
         }
         return super.onOptionsItemSelected(item)

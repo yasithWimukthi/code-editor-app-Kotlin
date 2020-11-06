@@ -1,3 +1,7 @@
+/**
+ * SIMPLE HTML CODE EDITOR APP
+ */
+
 package com.androidstudio.kotlin.codeeditor
 
 import android.content.Intent
